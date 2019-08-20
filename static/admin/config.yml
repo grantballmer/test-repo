@@ -6,10 +6,16 @@ public_folder: assets
 collections:
   - name: blog
     label: Blog
-    folder: src/blog
+    folder: src/pages/blog
     create: true
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: date, label: Date, widget: date }
       - { name: body, label: Body, widget: markdown }
+       - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blogTemplate",
+        }
