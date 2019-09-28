@@ -1,5 +1,5 @@
 ---
-path: chirp
+path: /roster/chirp
 name: Chirp
 genre: Progressive Rock / Funk / Fusion
 thumbnail: /assets/chirp-roster.jpg

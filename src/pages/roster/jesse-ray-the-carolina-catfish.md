@@ -1,5 +1,5 @@
 ---
-path: /roster/jesse-ray-&-the-carolina-catfish
+path: /roster/jesse-ray-and-the-carolina-catfish
 name: Jesse Ray & The Carolina Catfish
 genre: Rockabilly / Rock & Roll
 thumbnail: /assets/jesseray-roster.jpg
