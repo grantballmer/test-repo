@@ -2,18 +2,18 @@
 path: /roster/jesse-ray-and-the-carolina-catfish
 name: Jesse Ray & The Carolina Catfish
 genre: Rockabilly / Rock & Roll
-thumbnail: /assets/jesseray-roster.jpg
+thumbnail: /assets/jesse-ray-roster.jpg
 banner: /assets/jesse-ray-banner.jpg
 social:
-  - facebook: "https://www.facebook.com/jesserayandthecatfish/"
-    instagram: "https://www.instagram.com/jrccband/"
+  - facebook: 'https://www.facebook.com/jesserayandthecatfish/'
+    instagram: 'https://www.instagram.com/jrccband/'
     itunes: >-
       https://itunes.apple.com/us/artist/jesse-ray-and-the-carolina-catfish/916411830
-    spotify: "https://open.spotify.com/artist/4Qafc3GarByfVBFGCi81zy"
-    youtube: "https://www.youtube.com/channel/UCnyprTjjiOpBIp1MOqkHSlQ"
+    spotify: 'https://open.spotify.com/artist/4Qafc3GarByfVBFGCi81zy'
+    youtube: 'https://www.youtube.com/channel/UCnyprTjjiOpBIp1MOqkHSlQ'
 management:
   - email: Nathan@purchaseproductions.com
-    name: "Nathan Purchase  "
+    name: 'Nathan Purchase  '
     position: Booking
   - email: Nathan@purchaseproductions.com
     name: Nathan Purchase
