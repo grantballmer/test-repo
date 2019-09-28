@@ -24,19 +24,14 @@ collections:
     label: Band
     folder: src/pages/roster
     create: true
+    identifier_field: band
     fields:
       - { name: slug, label: Path }
       - { name: name, label: Name }
       - { name: genre, label: Genre }
       - { name: bio, label: Band Bio, widget: markdown }
-      - label: Management
-        name: management
-        widget: list
-        allow_add: true
-        fields:
-          - { label: Position, name: position }
-          - { label: Name, name: name }
-          - { label: Email, name: email }
+      - { name: thumbnail, label: Roster Page Thumbnail, widget: image }
+      - { name: banner, label: Band Page Banner, widget: image }
       - label: Social Media
         name: social
         widget: list
@@ -46,6 +41,14 @@ collections:
           - { label: iTunes Link, name: itunes }
           - { label: Facebook Link, name: facebook }
           - { label: Instagram Link, name: instagram }
+      - label: Management
+        name: management
+        widget: list
+        allow_add: true
+        fields:
+          - { label: Position, name: position }
+          - { label: Name, name: name }
+          - { label: Email, name: email }
       - {
           label: Template Key,
           name: templateKey,
