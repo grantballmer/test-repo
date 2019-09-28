@@ -18,9 +18,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               path
               templateKey
             }
-            fields {
-              slug
-            }
           }
         }
       }
