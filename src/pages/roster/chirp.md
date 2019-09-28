@@ -2,8 +2,8 @@
 path: chirp
 name: Chirp
 genre: Progressive Rock / Funk / Fusion
-thumbnail: /assets/jesse-ray-banner.jpg
-banner: /assets/chirp-roster.jpg
+thumbnail: /assets/chirp-roster.jpg
+banner: /assets/chirp-banner.jpg
 social:
   - facebook: 'https://www.facebook.com/chirpmusic/'
     instagram: 'https://www.instagram.com/chirpmusic/'
