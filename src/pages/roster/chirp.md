@@ -37,6 +37,9 @@ management:
   - email: chirplive@gmail.com
     name: Brian Long
     position: Tour Manager
+  - email: Nathan@purchaseproductions.com
+    name: Nathan Purchase
+    position: Manager
 templateKey: bandTemplate
 ---
 
