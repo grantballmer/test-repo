@@ -29,7 +29,7 @@ const bandTemplate = ({ data }) => {
           </div>
 
           <BackgroundImage
-            className={`profile-hero profile-hero__${path}`}
+            className={`profile-hero profile-hero__${name}`}
             fluid={banner.childImageSharp.fluid}
             alt={name}
           >

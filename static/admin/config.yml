@@ -10,8 +10,6 @@ collections:
     create: true
     identifier_field: name
     fields:
-      - { name: title, label: Title }
-      - { name: path, label: Path }
       - { name: name, label: Name }
       - { name: genre, label: Genre }
       - { name: body, label: Band Bio, widget: markdown }
