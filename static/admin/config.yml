@@ -19,3 +19,36 @@ collections:
           widget: "hidden",
           default: "blogTemplate",
         }
+
+   - name: band
+    label: Band
+    folder: src/pages/roster
+    create: true
+    fields:
+      - { name: slug, label: Path }
+      - { name: name, label: Name }
+      - { name: genre, label: Genre }
+      - { name: bio, label: Band Bio, widget: markdown }
+      - label: Management
+        name: management
+        widget: list
+        allow_add: true
+        fields:
+          - { label: Position, name: position }
+          - { label: Name, name: name }
+          - { label: Email, name: email }
+      - label: Social Media
+        name: social
+        widget: list
+        fields:
+          - { label: Spotify Link, name: spotify }
+          - { label: Youtube Link, name: youtube }
+          - { label: iTunes Link, name: itunes }
+          - { label: Facebook Link, name: facebook }
+          - { label: Instagram Link, name: instagram }
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: "hidden",
+          default: "bandTemplate",
+        }
