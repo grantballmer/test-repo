@@ -7,14 +7,12 @@ collections:
   - name: band
     label: Band
     folder: src/pages/roster
-    slug: "/roster/{{slug}}"
     create: true
     identifier_field: name
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
       - { name: name, label: Name }
-
       - { name: genre, label: Genre }
       - { name: body, label: Band Bio, widget: markdown }
       - { name: thumbnail, label: Roster Page Thumbnail, widget: image }
