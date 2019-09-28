@@ -20,7 +20,7 @@ collections:
           default: "blogTemplate",
         }
 
-   - name: band
+  - name: band
     label: Band
     folder: src/pages/roster
     create: true
