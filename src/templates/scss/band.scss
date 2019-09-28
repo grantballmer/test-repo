@@ -1,0 +1,310 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/svg.scss";
+
+.profile-container {
+  width: 100%;
+  padding: 12px;
+}
+
+.profile-hero-wrapper {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.profile-hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  @include flex(center, center);
+  flex-direction: column;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 94%);
+  clip-path: polygon(0 0, 100% 0, 100% 98%, 0 94%);
+  padding: 100px 2% 12px;
+
+  &::before {
+    background-attachment: fixed;
+    background-position: bottom !important;
+  }
+
+  &__Chirp::before {
+    background-position: top !important;
+  }
+
+  @include tablet {
+    justify-content: center;
+    background-attachment: fixed;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: white;
+    z-index: 5;
+    margin: -8px;
+    text-align: center;
+
+    @include wide-mobile {
+      font-size: 6rem;
+    }
+    @include tablet {
+      font-size: 8rem;
+    }
+  }
+
+  // &__desmondJones {
+  //   background-position: bottom;
+  //   background-image: url("./images/desmond-jones-mobile.jpg");
+
+  //   // @include wide-mobile {
+  //   //   background-image: url("./images/desmond-jones-1000.jpg");
+  //   // }
+
+  //   @include tablet {
+  //     background-image: url("./images/desmond-jones-tablet.jpg");
+  //   }
+
+  //   @include desktop {
+  //     background-image: url("./images/desmond-jones-band.jpg");
+  //   }
+  // }
+
+  // &__jesseRay {
+  //   background-position: center;
+  //   background-image: url("./images/jesse-ray-mobile.jpg");
+
+  //   @include wide-mobile {
+  //     background-image: url("./images/jesse-ray-1000.jpg");
+  //   }
+
+  //   @include tablet {
+  //     background-image: url("./images/jesse-ray-tablet.jpg");
+  //   }
+
+  //   @include desktop {
+  //     background-image: url("./images/jesse-ray-profile.jpg");
+  //   }
+  // }
+
+  // &__chirp {
+  //   background-position: top;
+  //   background-image: url("./images/chirp-mobile.jpg");
+
+  //   @include wide-mobile {
+  //     background-image: url("./images/chirp-1000.jpg");
+  //   }
+
+  //   @include tablet {
+  //     background-image: url("./images/chirp-tablet.jpg");
+  //   }
+
+  //   @include desktop {
+  //     background-image: url("./images/chirp-profile.jpg");
+  //   }
+  // }
+
+  &:after {
+    @include afterOverlay;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.profile-about {
+  width: 100%;
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $charcoal;
+  @include tablet {
+    flex-direction: row;
+    margin: 64px 0;
+    padding-left: 4%;
+  }
+}
+
+.profile-about__info {
+  width: 100%;
+  @include flex(flex-start, center);
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding: 0 4%;
+  color: $charcoal;
+
+  @include tablet {
+    width: 50%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 3rem;
+    align-self: center;
+    text-align: center;
+  }
+
+  h4 {
+    align-self: center;
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+}
+
+.profile-about__music {
+  width: 100%;
+  height: 100%;
+  padding: 0 4%;
+  background-color: transparent;
+  @include flex(space-around, center); // flex-wrap: wrap;
+  @include tablet {
+    width: 50%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: $charcoal;
+  }
+
+  &--platform {
+    // width: 48%;
+    width: 60px; // height: 75px;
+    height: 60px;
+    border-radius: 50%;
+    @include flex(center, center);
+    font-size: 3rem;
+    background-color: $charcoal;
+    color: white;
+    transition: all 0.2s;
+    margin-bottom: 4%;
+
+    @include wide-mobile {
+      width: 75px;
+      height: 75px;
+      font-size: 3.2rem;
+    }
+
+    @include tablet {
+      width: 250px;
+      height: 50px;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      border-radius: 0;
+      border: 1px solid $charcoal;
+      color: $charcoal;
+      background-color: white;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+      // margin-right: 4%;
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $charcoal;
+      color: white;
+    }
+
+    .profile-icon {
+      @include tablet {
+        margin-right: 6px;
+      }
+    }
+
+    h4 {
+      display: none;
+      @include tablet {
+        display: inline;
+      }
+    }
+  }
+}
+
+.profile-contact {
+  width: 100%;
+  height: 45vh;
+  padding: 4%;
+  position: relative;
+  @include flex(center, center);
+  flex-direction: column;
+  background-color: $charcoal;
+  clip-path: polygon(0 4%, 100% 12%, 100% 100%, 0 100%);
+  color: white;
+
+  @include tablet {
+    height: 40vh;
+    justify-content: space-between;
+  }
+
+  h4 {
+    font-size: 3rem;
+
+    @include tablet {
+      font-size: 5rem;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.profile-contact__details {
+  width: 100%;
+  @include flex(space-between, center);
+  flex-direction: column;
+  z-index: 5;
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.contact-information {
+  @include flex(center, center);
+  flex-direction: column;
+  margin: 8px 0;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    @include tablet {
+      font-size: 2.4rem;
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  &__email {
+    @include flex(center, center);
+    font-size: 1.3rem;
+    color: white;
+    @include tablet {
+      font-size: 1.6rem;
+    }
+
+    i {
+      margin-right: 6px;
+    }
+
+    &:hover p {
+      text-decoration: underline;
+    }
+  }
+}

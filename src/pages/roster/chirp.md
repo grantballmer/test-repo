@@ -1,5 +1,5 @@
 ---
-slug: chirp
+path: chirp
 name: Chirp
 genre: Progressive Rock / Funk / Fusion
 bio: >-
@@ -25,11 +25,11 @@ bio: >-
 thumbnail: /assets/chirp-roster.jpg
 banner: /assets/chirp-banner.jpg
 social:
-  - facebook: 'https://www.facebook.com/chirpmusic/'
-    instagram: 'https://www.instagram.com/chirpmusic/'
-    itunes: 'https://itunes.apple.com/us/artist/chirp/id564364466'
-    spotify: 'https://open.spotify.com/artist/2Lljzm1nd6U9hGbUGouL0u'
-    youtube: 'https://www.youtube.com/channel/UCHdhnMx3DJue5bd7cjC9_Sw'
+  - facebook: "https://www.facebook.com/chirpmusic/"
+    instagram: "https://www.instagram.com/chirpmusic/"
+    itunes: "https://itunes.apple.com/us/artist/chirp/id564364466"
+    spotify: "https://open.spotify.com/artist/2Lljzm1nd6U9hGbUGouL0u"
+    youtube: "https://www.youtube.com/channel/UCHdhnMx3DJue5bd7cjC9_Sw"
 management:
   - email: Nathan@purchaseproductions.com
     name: Nathan Purchase
@@ -42,4 +42,3 @@ management:
     position: Manager
 templateKey: bandTemplate
 ---
-

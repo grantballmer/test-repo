@@ -11,10 +11,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       ) {
         edges {
           node {
+            id
             frontmatter {
               path
               templateKey
-              title
             }
           }
         }
@@ -34,7 +34,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: path.resolve(
         `src/templates/${String(node.frontmatter.templateKey)}.js`
       ),
-      context: {}, // additional data can be passed via context
+      context: { id: node.id }, // additional data can be passed via context
     })
   })
 }

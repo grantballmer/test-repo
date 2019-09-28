@@ -26,10 +26,10 @@ collections:
     create: true
     identifier_field: name
     fields:
-      - { name: slug, label: Path }
+      - { name: path, label: Path }
       - { name: name, label: Name }
       - { name: genre, label: Genre }
-      - { name: bio, label: Band Bio, widget: markdown }
+      - { name: body, label: Band Bio, widget: markdown }
       - { name: thumbnail, label: Roster Page Thumbnail, widget: image }
       - { name: banner, label: Band Page Banner, widget: image }
       - label: Social Media
