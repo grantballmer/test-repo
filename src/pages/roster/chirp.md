@@ -3,7 +3,7 @@ path: chirp
 name: Chirp
 genre: Progressive Rock / Funk / Fusion
 thumbnail: /assets/chirp-roster.jpg
-banner: /assets/chirp-banner.jpg
+banner: /assets/chirp-roster.jpg
 social:
   - facebook: 'https://www.facebook.com/chirpmusic/'
     instagram: 'https://www.instagram.com/chirpmusic/'
