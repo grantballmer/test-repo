@@ -1,0 +1,31 @@
+.sideNav {
+  width: 75%;
+  height: 100vh;
+  @include flex(flex-start, center);
+  flex-direction: column;
+  padding-top: 92px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  transform: translate(calc(100% + 12px), -12px);
+  transition: transform 0.2s linear;
+  z-index: 4;
+  font-size: 2.2rem;
+
+  & > * {
+    margin: 16px;
+  }
+
+  @include wide-mobile {
+    width: 60%;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.slideIn {
+  transform: translate(12px, -12px);
+}

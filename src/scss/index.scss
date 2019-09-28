@@ -1,0 +1,208 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./svg.scss";
+@import "./btn.scss";
+
+.hero-wrapper {
+  width: 100%;
+  height: 90vh;
+  padding: 0 12px;
+  position: relative;
+
+  @include tablet {
+    height: 100vh;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 99.9%;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 94%);
+  clip-path: polygon(0 0, 101% 0, 101% 98%, 0 94%);
+  z-index: -1;
+  overflow: hidden;
+  // background-image: url("../images/hero-850.jpg");
+
+  // @include tablet {
+  //   height: 100%;
+  //   // background-image: url("../images/desmond-jones-hero.jpg");
+  //   background-image: url("../images/hero-1200.jpg");
+  //   background-size: cover;
+  //   background-attachment: fixed;
+  // }
+
+  // @include desktop {
+  //   background-image: url("../images/hero-1700.jpg");
+  // }
+}
+
+.home-about {
+  width: 100%;
+  height: 55vh;
+  @include flex(center, center);
+  flex-direction: column;
+  font-weight: 300;
+  padding: 0 10%;
+  text-align: center;
+
+  @include tablet {
+    padding: 0 15%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    @include wide-mobile {
+      font-size: 2.4rem;
+    }
+    @include tablet {
+      // font-size: 3.6rem;
+      font-size: 2.8rem;
+      // font-size: 2.4rem;
+    }
+
+    @include desktop {
+      font-size: 3.9rem;
+    }
+  }
+}
+
+.home-booking-wrapper {
+  width: 100%;
+  height: 50vh;
+  padding: 0 12px 12px 12px;
+  position: relative;
+}
+
+.home-booking {
+  width: 100%;
+  height: 99.9%;
+  padding: 0 2%;
+  @include flex(center, flex-start);
+  flex-direction: column;
+  color: white;
+  -webkit-clip-path: polygon(0 4%, 100% 12%, 100% 100%, 0 100%);
+  clip-path: polygon(0 4%, 100% 12%, 100% 100%, 0 100%);
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+
+  @include tablet {
+    flex-direction: row;
+    padding: 0 5%;
+  }
+
+  &:after {
+    @include afterOverlay;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+
+  a,
+  p {
+    color: white;
+    z-index: 1;
+  }
+
+  a {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    @include tablet {
+      font-size: 5.2rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #ddd;
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 4px 0;
+    @include wide-mobile {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    @include tablet {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.home-booking__section {
+  width: 100%;
+  height: 60%;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include tablet {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  a {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    @include tablet {
+      font-size: 5.2rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: #ddd;
+      text-decoration: underline;
+    }
+  }
+}
+
+.home-booking__ambassador {
+  height: 40%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+
+  @include tablet {
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  img {
+    max-width: 125px;
+
+    @include tablet {
+      max-width: 200px;
+    }
+  }
+
+  div {
+    width: 100%;
+    text-align: center;
+
+    @include tablet {
+      max-width: 200px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.btn {
+  width: 180px;
+  height: 40px;
+  background-color: $btn-blue;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  @include flex(center, center);
+  opacity: 1;
+  transition: all 0.1s linear; // z-index: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.btn-link {
+  border: 3.5px solid #0a99e7;
+  margin: 36px; // &:hover {
+  //   opacity: .75;
+  // }
+}
+
+.btn-profile,
+.btn-booking {
+  width: 140px;
+  transition: transform 0.2s linear;
+  background-color: white;
+  color: black;
+}
+
+.btn-profile {
+  transform: translateY(-200px);
+}
+
+.btn-booking {
+  transform: translateY(200px);
+}
+
+.btn-gallery {
+  width: 200px;
+  height: 60px;
+  border: 3.5px solid #0a99e7;
+  background-color: white;
+  color: $btn-blue;
+
+  &:hover {
+    background-color: $btn-blue;
+    color: white;
+    opacity: 1;
+  }
+}
