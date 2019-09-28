@@ -2,14 +2,14 @@
 path: /roster/desmond-jones
 name: Desmond Jones
 genre: American Rock & Roll
-thumbnail: /assets/desmondjones-roster.jpg
+thumbnail: /assets/desmond-jones-roster.jpg
 banner: /assets/desmond-jones-banner.jpg
 social:
-  - facebook: "https://www.facebook.com/DesmondJonesBand/"
-    instagram: "https://www.instagram.com/desmondjonesband/"
-    itunes: "https://music.apple.com/us/album/desmond-jones/1294152783"
-    spotify: "https://open.spotify.com/artist/0UU2zglZ7Rk4v2FIY9OMOv"
-    youtube: "https://www.youtube.com/channel/UCZDlT2HetTVdN2vRG07nPzA"
+  - facebook: 'https://www.facebook.com/DesmondJonesBand/'
+    instagram: 'https://www.instagram.com/desmondjonesband/'
+    itunes: 'https://music.apple.com/us/album/desmond-jones/1294152783'
+    spotify: 'https://open.spotify.com/artist/0UU2zglZ7Rk4v2FIY9OMOv'
+    youtube: 'https://www.youtube.com/channel/UCZDlT2HetTVdN2vRG07nPzA'
 management:
   - email: erwin@everupwardent.com
     name: Erwin Schemankewitz
