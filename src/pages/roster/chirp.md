@@ -1,4 +1,5 @@
 ---
+title: chirp
 path: chirp
 name: Chirp
 genre: Progressive Rock / Funk / Fusion
