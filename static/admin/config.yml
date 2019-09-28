@@ -4,23 +4,6 @@ backend:
 media_folder: static/assets
 public_folder: assets
 collections:
-  - name: blog
-    label: Blog
-    folder: src/pages/blog
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: date, label: Date, widget: date }
-      - { name: body, label: Body, widget: markdown }
-      - {
-          label: Template Key,
-          name: templateKey,
-          widget: "hidden",
-          default: "blogTemplate",
-        }
-
   - name: band
     label: Band
     folder: src/pages/roster
