@@ -5,8 +5,9 @@ import { Link, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 const bandTemplate = ({ data }) => {
-  console.log(data)
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter, html } = data.markdownRemark
+
+  console.log(frontmatter)
 
   return (
     <section className="profile-container">
@@ -24,7 +25,7 @@ const bandTemplate = ({ data }) => {
       </div>
       <h1>{frontmatter.name}</h1>
       <h2>{frontmatter.genre}</h2>
-      <div dangerouslySetInnerHTML={{ __html: frontmatter.bio }}></div>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
     </section>
     // <section className="profile-container">
     //   <div className="profile-hero-wrapper">
@@ -128,7 +129,6 @@ export const bandQuery = graphql`
         templateKey
         name
         genre
-        bio
         thumbnail
         banner
       }
