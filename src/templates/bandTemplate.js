@@ -1,13 +1,11 @@
 import React from "react"
 import "./scss/band.scss"
 
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 const bandTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
-
-  console.log(frontmatter)
 
   return (
     <section className="profile-container">
@@ -21,6 +19,14 @@ const bandTemplate = ({ data }) => {
           >
             <polygon points="0,94 100,98 100,100 0,100" />
           </svg>
+
+          <BackgroundImage
+            className={`profile-hero profile-hero__${frontmatter.path}`}
+            fluid={frontmatter.banner.childImageSharp.fluid}
+            alt={frontmatter.name}
+          >
+            <h2>{frontmatter.name}</h2>
+          </BackgroundImage>
         </div>
       </div>
       <h1>{frontmatter.name}</h1>
@@ -129,8 +135,13 @@ export const bandQuery = graphql`
         templateKey
         name
         genre
-        thumbnail
-        banner
+        banner {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
