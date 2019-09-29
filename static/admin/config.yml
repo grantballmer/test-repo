@@ -39,3 +39,19 @@ collections:
           widget: "hidden",
           default: "bandTemplate",
         }
+
+  - name: about
+    label: About
+    folder: src/pages/roster
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: body, label: About, widget: markdown }
+      - label: Team
+        name: team
+        widget: list
+        allow_add: true
+        fields:
+          - { label: Name, name: name }
+          - { label: Bio, name: body }
+          - { label: Picture, name: picture, widget: image }

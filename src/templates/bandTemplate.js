@@ -13,6 +13,8 @@ const bandTemplate = ({ data }) => {
 
   const { spotify, youtube, itunes, facebook, instagram } = social[0]
 
+  const backgroundClass = name === "Chirp" ? "chirp" : ""
+
   return (
     <Layout>
       <section className="profile-container">
@@ -29,7 +31,7 @@ const bandTemplate = ({ data }) => {
           </div>
 
           <BackgroundImage
-            className={`profile-hero profile-hero__${name}`}
+            className={`profile-hero profile-hero__${backgroundClass}`}
             fluid={banner.childImageSharp.fluid}
             alt={name}
           >
