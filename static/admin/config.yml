@@ -40,26 +40,24 @@ collections:
           default: "bandTemplate",
         }
 
-    - name: "gallery"
-      label: "Gallery"
-      folder: "src/pages/services"
-      create: true
-      fields:
-        - {
-            label: "Template Key",
-            name: "templateKey",
-            widget: "hidden",
-            default: "gallery",
-          }
-        - { label: "Title", name: "title", widget: "string" }
-        - label: "Grid"
-          name: "grid"
-          widget: "list"
-          fields:
-            - { label: "Image", name: "image", widget: "image" }
-            - { label: "Band Name", name: "band", widget: "string" }
-
-            
+  - name: "gallery"
+    label: "Gallery"
+    folder: "src/pages/services"
+    create: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "gallery",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Grid"
+        name: "grid"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Band Name", name: "band", widget: "string" }
   # - name: pages
   #   label: Pages
   #   files:
