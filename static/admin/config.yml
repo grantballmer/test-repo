@@ -51,6 +51,7 @@ collections:
           widget: "hidden",
           default: "gallery",
         }
+      - { name: path, label: Path }
       - { label: "Title", name: "title", widget: "string" }
       - label: "Grid"
         name: "grid"
