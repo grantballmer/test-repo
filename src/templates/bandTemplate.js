@@ -9,7 +9,7 @@ import Management from "../components/bandsPage/Management"
 
 const bandTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
-  const { name, path, genre, banner, social, management } = frontmatter
+  const { name, genre, banner, social, management } = frontmatter
 
   const { spotify, youtube, itunes, facebook, instagram } = social[0]
 

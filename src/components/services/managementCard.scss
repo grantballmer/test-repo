@@ -1,0 +1,107 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.management-card {
+  width: 100%;
+  height: 300px;
+  @include flex(flex-start, center);
+  background-color: rgba(3, 117, 180, 0.7);
+  padding: 4%;
+  color: white;
+  transition: filter 0.3s;
+  border: 5px solid white;
+  filter: brightness(100%);
+  text-align: center;
+  margin-bottom: 12px;
+  flex-direction: column;
+
+  @include wide-mobile {
+    height: 28%;
+    margin-bottom: 0;
+    flex-direction: row;
+    padding: 2%;
+  }
+
+  @include desktop {
+    width: 275px;
+    height: 80%;
+    flex-direction: column;
+  }
+
+  &:hover {
+    // background-color: rgba(3, 117, 180, 0.2);
+    filter: brightness(120%);
+  }
+}
+
+.management-card__icon {
+  // height: 25%;
+  margin-bottom: 4%;
+
+  @include wide-mobile {
+    width: 20%;
+    height: 100%;
+    @include flex(center, center);
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15%;
+  }
+
+  img {
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+
+    @include wide-mobile {
+      height: 80px;
+    }
+  }
+}
+
+.management-card__text {
+  width: 100%;
+  height: 70%;
+  @include flex(space-around, center);
+  flex-direction: column;
+
+  @include wide-mobile {
+    width: 75%;
+    height: 100%;
+  }
+
+  @include desktop {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+
+    @include wide-mobile {
+      font-size: 2rem;
+    }
+
+    @include desktop {
+      margin-bottom: 15%;
+    }
+  }
+
+  p {
+    font-size: 1.1rem;
+
+    @include tablet {
+      font-size: 1.1rem;
+    }
+    @include desktop {
+      font-size: 1.7vh;
+    }
+    @include ultra-wide {
+      font-size: 1.5vh;
+    }
+  }
+}

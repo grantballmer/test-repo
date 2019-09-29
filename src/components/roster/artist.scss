@@ -1,0 +1,37 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.artist__desmond {
+  margin-bottom: 12px;
+
+  @include wide-mobile {
+    margin-bottom: 0;
+    margin-right: 6px;
+  }
+
+  // .overlay-background-image {
+  //   background-image: url('./images/desmond-lg.jpg');
+  // }
+}
+
+.artist__jesse {
+  @include wide-mobile {
+    margin-left: 6px;
+  }
+
+  // .overlay-background-image {
+  //   background-image: url('./images/jesse-lg.jpg');
+  // }
+}
+
+.artist__chirp {
+  margin-top: 12px;
+  @include desktop {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+
+  // .overlay-background-image {
+  //   background-image: url('./images/chirp-lg.jpg');
+  // }
+}

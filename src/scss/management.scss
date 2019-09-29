@@ -1,0 +1,77 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.management {
+  width: calc(100% - 24px);
+  // height: calc(100vh - 12px);
+  position: relative;
+  margin-left: 12px;
+  padding: 92px 2% 12px;
+  @include flex(space-around, center);
+  flex-direction: column;
+  overflow: hidden;
+
+  @include wide-mobile {
+    height: calc(100vh - 12px);
+    padding: 92px 4% 12px;
+  }
+
+  @include tablet {
+    padding: 92px 8% 12px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.management__hero {
+  width: 102%;
+  height: 105%;
+  position: absolute;
+  top: 0;
+  left: -3px;
+  z-index: -1;
+  filter: blur(4px);
+  // background-image: url("../images/management-bk-800.jpg");
+  background-position: bottom center;
+  // background-size: cover;
+
+  @include wide-mobile {
+    // background-image: url("../images/management-bk-1200.jpg");
+  }
+
+  @include tablet {
+    // background-image: url("../images/management-bk.jpg");
+  }
+
+  &:after {
+    @include afterOverlay;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.management__overlay {
+  width: 102%;
+  height: 105%;
+  position: absolute;
+  top: 0;
+  left: -3px;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bottom-icons {
+  margin-top: 24px;
+  padding-left: 12px;
+  @include flex(flex-start, center);
+  flex-direction: column;
+  font-size: 0.9rem;
+  @include tablet {
+    flex-direction: row;
+  }
+
+  & > * {
+    margin-right: 5px;
+  }
+}
