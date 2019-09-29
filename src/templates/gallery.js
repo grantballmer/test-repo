@@ -1,9 +1,19 @@
 import React from "react"
 // import Helmet from 'react-helmet';
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
+// import { graphql } from "gatsby"
+// import Layout from "../components/Layout"
 // import Content from '../components/Content';
-import PhotoGrid from "../components/services/PhotoGrid"
+// import PhotoGrid from "../components/services/PhotoGrid"
+
+const GalleryPage = () => {
+  return (
+    <div>
+      <h1>Gallery Page</h1>
+    </div>
+  )
+}
+
+export default GalleryPage
 
 // export const GalleryPageTemplate = ({ info }) => {
 //   const { title } = info
