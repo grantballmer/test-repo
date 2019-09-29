@@ -14,6 +14,12 @@ management:
   - email: erwin@everupwardent.com
     name: Erwin Schemankewitz
     position: Booking
+  - email: Nathan@purchaseproductions.com
+    name: Nathan Purchase
+    position: 'Tour Manager  '
+  - email: kevin.desmondjonesband@gmail.com
+    name: Kevin McKay
+    position: Manager
 templateKey: bandTemplate
 ---
 
