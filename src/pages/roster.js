@@ -62,9 +62,10 @@ class Roster extends React.Component {
     const noScrollClass = showOverlay ? "noScroll" : ""
 
     const { edges } = this.props.data.allMarkdownRemark
+    console.log(edges)
     const chirp = edges[0].node.frontmatter.thumbnail
-    const jesse = edges[1].node.frontmatter.thumbnail
-    const desmond = edges[2].node.frontmatter.thumbnail
+    const desmond = edges[1].node.frontmatter.thumbnail
+    const jesse = edges[2].node.frontmatter.thumbnail
 
     // const { chirp, desmond, jesse } = this.props.data
 
