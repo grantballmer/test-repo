@@ -40,9 +40,9 @@ collections:
           default: "bandTemplate",
         }
 
-  - name: "gallery"
-    label: "Gallery"
-    folder: "src/pages/services"
+  - name: gallery
+    label: Gallery
+    folder: src/pages/services
     create: true
     fields:
       - {

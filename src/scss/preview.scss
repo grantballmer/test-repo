@@ -1,0 +1,43 @@
+.preview-photography {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.preview-design {
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 12px;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 12px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.preview-image {
+  width: 30%;
+  height: 130px;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.preview-band {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.6rem;
+}

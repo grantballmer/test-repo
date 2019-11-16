@@ -8,10 +8,11 @@ import PhotoGrid from "../components/services/PhotoGrid"
 export const GalleryPageTemplate = ({ info }) => {
   const { title } = info
   const isDesign = title === "design"
+  console.log(info)
 
-  const images = info.grid.map(element => {
+  const images = info.grid.map((element, index) => {
     if (isDesign) {
-      return <img src={element.image} alt="poster" />
+      return <img src={element.image} alt="poster" key={index} />
     } else {
       return (
         <div className="preview-image">

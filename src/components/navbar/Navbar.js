@@ -32,7 +32,7 @@ class Navbar extends React.Component {
     const menuClass = openMenu ? "open" : ""
 
     return (
-      <nav>
+      <nav className="navigation">
         <Link to="/" className="logo" onClick={this.removeSideNav}>
           <img src={Logo} alt="logo" />
         </Link>
