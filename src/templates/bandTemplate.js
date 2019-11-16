@@ -7,12 +7,37 @@ import Layout from "../components/Layout"
 import SocialMedia from "../components/bandsPage/SocialMedia"
 import Management from "../components/bandsPage/Management"
 
+// export const BandPageTemplate = ({ info }) => {
+//   const { title } = info
+//   const isDesign = title === "design"
+//   console.log(info)
+
+//   const images = info.grid.map((element, index) => {
+//     if (isDesign) {
+//       return <img src={element.image} alt="poster" key={index} />
+//     } else {
+//       return (
+//         <div className="preview-image">
+//           <img src={element.image} alt="band" />
+//           <p className="preview-band">{element.band}</p>
+//         </div>
+//       )
+//     }
+//   })
+
+//   return (
+//     <div
+//       className={title === "design" ? "preview-design" : "preview-photography"}
+//     >
+//       {images}
+//     </div>
+//   )
+// }
+
 const bandTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
   const { name, genre, banner, social, management } = frontmatter
-
   const { spotify, youtube, itunes, facebook, instagram } = social[0]
-
   const backgroundClass = name === "Chirp" ? "chirp" : ""
 
   return (
