@@ -33,6 +33,7 @@ export const GalleryPageTemplate = ({ info }) => {
 }
 
 const GalleryPage = ({ data }) => {
+  console.log(data)
   const { markdownRemark: gallery } = data
   const images = gallery.frontmatter.grid
   const { title } = gallery.frontmatter

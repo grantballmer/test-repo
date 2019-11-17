@@ -1,0 +1,76 @@
+@import "../../scss/mixins.scss";
+@import "../../scss/variables.scss";
+
+.episodePage {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  color: black;
+  padding: calc(80px + 6%) 15% 8%;
+  @include flex(center, flex-start);
+  flex-direction: column;
+  color: white;
+
+  @include wide-mobile {
+    justify-content: space-around;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+
+    @include wide-mobile {
+      font-size: 3rem;
+    }
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  h1,
+  iframe {
+    margin-bottom: 6%;
+
+    @include wide-mobile {
+      margin-bottom: 2%;
+    }
+  }
+
+  iframe {
+    background-color: white;
+    @include wide-mobile {
+      margin-top: 0;
+    }
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    margin-bottom: 100px;
+
+    @include wide-mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+
+    @include wide-mobile {
+      font-size: 1.8rem;
+    }
+
+    @include tablet {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.episodePage__group {
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+  border: 1px solid red;
+}

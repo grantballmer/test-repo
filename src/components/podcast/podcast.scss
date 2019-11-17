@@ -1,0 +1,211 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.podcast {
+  width: 100%;
+  height: calc(100vh - 12px);
+  position: relative;
+  // @include flex(flex-start, center);
+  color: white;
+  text-transform: uppercase;
+  padding: calc(80px + 4%) 12px 12px;
+  text-align: center;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 4%;
+    margin-bottom: 4%;
+  }
+}
+
+.podcast__hero {
+  width: calc(100% - 24px);
+  height: calc(100vh - 12px);
+  position: fixed;
+  top: 0;
+  left: 12px;
+  background-size: cover;
+  background-position: right;
+  background-image: url("../images/podcast-crop.jpg");
+  @include flex(center, center);
+  z-index: -1;
+  filter: brightness(50%);
+
+  @include tablet {
+    background-position: top;
+  }
+}
+
+.episode-container {
+  width: 100%;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  @include flex(space-between, flex-start);
+  flex-direction: column;
+  padding: 4% 6%;
+  position: relative;
+  text-align: left;
+  color: white;
+
+  @include wide-mobile {
+    height: 220px;
+    padding: 2% 10% 4%;
+  }
+
+  @include tablet {
+    padding: 2% 20% 4%;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    order: 2;
+
+    @include wide-mobile {
+      font-size: 2rem;
+    }
+
+    @include tablet {
+      order: 1;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-transform: initial;
+
+    @include wide-mobile {
+      font-size: 1.4rem;
+    }
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  p:first-of-type {
+    font-style: italic;
+    order: 1;
+    margin-left: 52px;
+    margin-top: 20px;
+    transform: translateY(-50%);
+
+    @include tablet {
+      order: 2;
+      margin-left: 0;
+    }
+  }
+
+  p:last-of-type {
+    order: 3;
+  }
+}
+
+.episode-counter {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 6%;
+  color: black;
+  @include flex(center, center);
+  font-weight: 700;
+  font-size: 2rem;
+
+  @include wide-mobile {
+    left: 10%;
+  }
+
+  @include tablet {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    left: calc(20% - 12px);
+    transform: translateX(-100%);
+  }
+}
+
+// .episode-desc {
+//   width: 80%;
+//   height: 100%;
+//   @include flex(space-between, flex-start);
+//   flex-direction: column;
+//   padding-bottom: 2%;
+//   color: white;
+
+//   h2 {
+//     font-size: 2rem;
+//   }
+
+//   p {
+//     font-size: 2rem;
+//     text-align: left;
+//     text-transform: initial;
+//   }
+// }
+
+// .podcast__title {
+//   position: absolute;
+//   top: 120px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+// .podcast__sidebar {
+//   width: 40%;
+//   height: 240px;
+//   padding-top: calc(80px + 4%);
+//   margin-bottom: 4%;
+//   @include flex(center, center);
+//   flex-direction: column;
+
+//   @include tablet {
+//     height: 100%;
+//     margin-bottom: 0;
+//   }
+
+//   img {
+//     height: 140px;
+//   }
+// }
+
+// .episodes {
+//   width: 100%;
+// }
+
+// .episode-container {
+//   width: 100%;
+//   height: 220px;
+//   text-align: left;
+//   @include flex(space-between, center);
+//   flex-direction: column;
+//   margin-right: auto;
+//   text-align: center;
+//   padding: 0 4%;
+
+//   @include tablet {
+//     width: 80%;
+//     padding: 0;
+//   }
+
+//   h1 {
+//     font-size: 1.8rem;
+//   }
+
+//   iframe {
+//     width: 80%;
+
+//     @include tablet {
+//       width: 60%;
+//     }
+//   }
+// }
